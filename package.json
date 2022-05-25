@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@svgdotjs/svg.js": "^3.1.2",
+    "smoothie": "^1.36.0"
+  }
+}
