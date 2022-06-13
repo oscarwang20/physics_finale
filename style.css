@@ -3,10 +3,26 @@ body {
     color: white
 }
 
+h3 {
+    color: black;
+}
+
 input {
     background-color: white;
     color: black;
     padding: 10px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 p {
@@ -31,5 +47,10 @@ label {
 
 ::placeholder {
     color: black;
+}
+
+.grid-x {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 

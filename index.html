@@ -4,6 +4,7 @@
         <title>Cranky Cranky Demo</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://cdn.plot.ly/plotly-2.12.1.min.js"></script>
     </head>
     <body>
         <h1>Cranky Cranky Demo</h1>
@@ -14,46 +15,51 @@
                         <input type="text" placeholder="Input Variables" disabled>
                     </div>
                     <div class="large-9 cell"></div>
-                    <div class="large-1 cell"><label for="angular_velocity" class="text-left">angular velocity</label></div>
+                    <div class="large-2 cell"><label for="angular_velocity" class="text-left">angular velocity</label></div>
                     <div class="large-3 cell">    
-                        <input type="number" id="angular_velocity" placeholder="Enter angular velocity">
+                        <input type="number" value=5 id="angular_velocity" placeholder="Enter angular velocity">
                     </div>
-                    <div class="large-8 cell"></div>
-                    <div class="large-1 cell"><label for="resistivity" class="text-left">resistivity</label></div>
+                    <div class="large-7 cell"></div>
+                    <div class="large-2 cell"><label for="resistivity" class="text-left">resistivity</label></div>
                     <div class="large-3 cell">
-                        <input type="number" id="resistivity" placeholder="Enter resistivity">
+                        <input type="number" value=1.72e-8 id="resistivity" placeholder="Enter resistivity">
                     </div>
-                    <div class="large-8 cell"></div>
-                    <div class="large-1 cell"><label for="num_coils" class="text-left">num coils</label></div>
+                    <div class="large-7 cell"></div>
+                    <div class="large-2 cell"><label for="num_coils" class="text-left">num coils</label></div>
                     <div class="large-3 cell">
-                        <input type="number" id="num_coils" placeholder="Enter number of coils">
+                        <input type="number" value=200 id="num_coils" placeholder="Enter number of coils">
                     </div>
-                    <div class="large-8 cell"></div>
-                    <div class="large-1 cell"><label for="coil_area" class="text-left">coil area</label></div>
+                    <div class="large-7 cell"></div>
+                    <div class="large-2 cell"><label for="coil_area" class="text-left">coil area</label></div>
                     <div class="large-3 cell">
-                        <input type="number" id="coil_area" placeholder="Enter coil area">
+                        <input type="number" value=0.08 id="coil_area" placeholder="Enter coil area">
                     </div>
-                    <div class="large-8 cell"></div>
-                    <div class="large-1 cell"><label for="b_field" class="text-left">mag field str</label></div>
+                    <div class="large-7 cell"></div>
+                    <div class="large-2 cell"><label for="b_field" class="text-left">pole strength</label></div>
                     <div class="large-3 cell">
-                        <input type="number" id="b_field" placeholder="Enter B">
+                        <input type="number" value=130 id="b_field" placeholder="Enter pole strength">
                     </div>
-                    <div class="large-8 cell"></div>
-                    <div class="large-1 cell"><label for="button" class="text-left">calculate</label></div>
+                    <div class="large-7 cell"></div>
                     <div class="large-3 cell">
-                        <input type="button" id="calculate">
+                        <input type="submit" id="calculate" value="Calculate">
                     </div>
-                    <div class="large-9 cell"></div>
+                    <div class="large-3 cell">
+                        <input type="submit" id="pauseplay" value="Start">
+                    </div>
+                    <div class="large-6 cell"></div>
                 </div>
                 <hr>
                 <div class="grid-x grid-padding-x" style="background-color:white;">
-                    <div class="large-3 cell"><input type="text" placeholder="output power" disabled></div><div class="large-9 cell"></div>
-                    <div class="large-3 cell"><input id="output_power" type="text" placeholder="" disabled></div></div><div class="large-9 cell"></div>
+                    <div class="large-3 cell"><h3>Output Power</h3></div><div class="large-9 cell"></div>
+                    <div class="large-3 cell"><input id="output_power" type="text" placeholder="" disabled></div><div class="large-9 cell"></div>
+                    <div class="large-3 cell"><h3>Average Power</h3></div><div class="large-9 cell"></div>
+                    <div class="large-3 cell"><input id="average_power" type="text" placeholder="" disabled></div><div class="large-9 cell"></div>    
                 </div>
             </div>
         </div>
-        
-
         <script src="app.js"></script>
+        <script>
+
+        </script>
     </body>
 </html>
