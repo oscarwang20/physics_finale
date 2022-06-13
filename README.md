@@ -1,12 +1,16 @@
 # Cranky Cranky
 Cranky Cranky is a simulation of a generator that turns mechanical energy into electrical energy.
 
-## Usage
+## Instructions
+Default values are provided for the generator. If this is your first time trying out the program, click the button that says "start" to begin. Once started, the simulation can either be paused or resumed by clicking the same button.
+
 Enter in values for the select variables (resistivity of wire, pole strength, number of coils in wire) or leave them as their default values. 
 
-Choose whether you want the generator to have a split-ring commutator by checking/unchecking the respective box. If the box is unchecked, the generator will not have a split-ring commutator.
+Choose whether you want the generator to have a split-ring commutator by clicking the button in the "input variables" tab. If it says "remove split-ring commutator" then the split-ring commutator is present and vice versa.
 
-Input an angular velocity if you want the simulation to turn the handle of the generator at a constant speed, or uncheck the respective box to spin the handle manually by clicking it and dragging in a circular motion. 
+Input an angular velocity to run the simulation to turn the handle of the generator at a constant speed.
+
+If you choose to change any of the input variables, click the button that says "recalculate" to reset the simulation to the new conditions.
 
 ## Physics
 In this model, we are neglecting the torque that the magnetic force produces when a current begins to flow through the wire in the magnetic field. We also set some variables used in the calculations, such as the area of the loop, as constant.
